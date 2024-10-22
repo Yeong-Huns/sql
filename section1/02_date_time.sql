@@ -120,6 +120,10 @@ SELECT DATE_ADD(r.rental_date, INTERVAL 5 DAY) AS '예상 반납 날짜'
 FROM rental AS r
 WHERE r.rental_date >= '2006-01-01';
 
+/*
+  rental 테이블에서 대여 시작 날짜( rental_date )가 2006년 1월 1일 이후인 모든 대여에 대해, 예상 반납 날짜를
+  대여 날짜로부터 5일 뒤로 설정하여, 출력해주세요.
+ */
 SELECT r.rental_date, DATE_ADD(r.rental_date, INTERVAL 5 DAY) AS '예상 반납일'
 FROM rental AS r
 WHERE EXTRACT(YEAR FROM r.rental_date);
