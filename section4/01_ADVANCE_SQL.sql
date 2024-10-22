@@ -1,3 +1,5 @@
+-- 1. 문자열 함수
+
 -- sakila -> DVD 렌탈 서비스
 
 use sakila;
